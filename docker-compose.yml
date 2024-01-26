@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  polytech-s3:
+    image: minio/minio
+    container_name: polytech-s3
+    restart: no
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: Polytech
+      MINIO_ROOT_PASSWORD: Polytech
+    command: server /home/minio --console-address ":9001"
