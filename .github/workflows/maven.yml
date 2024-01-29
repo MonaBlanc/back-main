@@ -41,6 +41,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
-        file: Dockerfile.gha
+        file: Dockerfile
         push: true
         tags: rg.fr-par.scw.cloud/polytech2024/back:v1
+        context: .
