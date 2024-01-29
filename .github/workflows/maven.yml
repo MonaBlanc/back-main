@@ -43,5 +43,5 @@ jobs:
       with:
         file: Dockerfile
         push: true
-        tags: rg.fr-par.scw.cloud/polytech2024/back:v1
+        tags: rg.fr-par.scw.cloud/polytech2024/kim/back:v1
         context: .
